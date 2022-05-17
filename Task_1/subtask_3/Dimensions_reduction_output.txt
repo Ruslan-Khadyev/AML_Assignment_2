@@ -1,0 +1,36 @@
+C:\Users\Ruslan\AppData\Local\Programs\Python\Python39\python.exe C:/Users/Ruslan/Documents/innopolis/AdvancedMachineLearning/as2/Task_1/Dimensions_reduction.py
+data has been loaded with X shape: (590540, 432) y shape: (590540,)
+Individual value for the selected point 0.1307498400106785
+Cumulative value for the selected point 96.88474914768342
+PCA has been done
+LDA has been done
+DecisionTreeClassifier() algorithm results
+Corresponding confusion matrix:
+[[110977   2889]
+ [  2476   1766]]
+Corresponding classification report:
+              precision    recall  f1-score   support
+
+           0       0.98      0.97      0.98    113866
+           1       0.38      0.42      0.40      4242
+
+    accuracy                           0.95    118108
+   macro avg       0.68      0.70      0.69    118108
+weighted avg       0.96      0.95      0.96    118108
+
+DecisionTreeClassifier() algorithm results
+Corresponding confusion matrix:
+[[110941   2925]
+ [  3104   1138]]
+Corresponding classification report:
+              precision    recall  f1-score   support
+
+           0       0.97      0.97      0.97    113866
+           1       0.28      0.27      0.27      4242
+
+    accuracy                           0.95    118108
+   macro avg       0.63      0.62      0.62    118108
+weighted avg       0.95      0.95      0.95    118108
+
+
+Process finished with exit code 0

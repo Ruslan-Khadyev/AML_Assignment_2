@@ -1,0 +1,52 @@
+C:\Users\Ruslan\AppData\Local\Programs\Python\Python39\python.exe C:/Users/Ruslan/Documents/innopolis/AdvancedMachineLearning/as2/Task_1/subtask_2/Comparison_with_statistics.py
+=========== Statistical imputing approach ===========
+   TransactionDT  TransactionAmt  ProductCD  ...   id_38  DeviceType  DeviceInfo
+0          86400            68.5       1912  ...     NaN         NaN         NaN
+1          86401            29.0       1912  ...     NaN         NaN         NaN
+2          86469            59.0       1912  ...     NaN         NaN         NaN
+3          86499            50.0       1912  ...     NaN         NaN         NaN
+4          86506            50.0        637  ...  1837.0      2216.0      1272.0
+
+[5 rows x 432 columns]
+Data has been loaded
+Data has been imputed with 'median' strategy
+Data has been scaled
+Data has been splitted
+Classifier has been created
+DecisionTreeClassifier() algorithm classification results
+Corresponding confusion matrix:
+[[111838   2028]
+ [  1724   2518]]
+Corresponding classification report:
+              precision    recall  f1-score   support
+
+           0       0.98      0.98      0.98    113866
+           1       0.55      0.59      0.57      4242
+
+    accuracy                           0.97    118108
+   macro avg       0.77      0.79      0.78    118108
+weighted avg       0.97      0.97      0.97    118108
+
+
+=========== Autoencoder imputing approach ===========
+Encoder has been loaded
+Data has been reloaded
+Data has been imputed with autoencoder
+Data has been splitted
+Classifier has been recreated
+DecisionTreeClassifier() algorithm results
+Corresponding confusion matrix:
+[[113866      0]
+ [     1   4241]]
+Corresponding classification report:
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00    113866
+           1       1.00      1.00      1.00      4242
+
+    accuracy                           1.00    118108
+   macro avg       1.00      1.00      1.00    118108
+weighted avg       1.00      1.00      1.00    118108
+
+
+Process finished with exit code 0

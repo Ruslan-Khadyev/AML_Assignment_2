@@ -1,0 +1,87 @@
+C:\Users\Ruslan\AppData\Local\Programs\Python\Python39\python.exe C:/Users/Ruslan/Documents/innopolis/AdvancedMachineLearning/as2/Task_1/Autoencoders_train_test.py
+using torch version: 1.11.0+cu113
+will use cuda: True
+data has been loaded
+Undercomplete autoencoder has been created
+Validating before train
+=============== Validating stage ===============
+loss: 46.3523
+=============== Learning stage ===============
+epoch [1/20], loss:5.3933
+epoch [2/20], loss:5.0370
+epoch [3/20], loss:5.2137
+epoch [4/20], loss:5.0390
+epoch [5/20], loss:4.8451
+epoch [6/20], loss:4.6284
+epoch [7/20], loss:5.0765
+epoch [8/20], loss:5.4381
+epoch [9/20], loss:4.5785
+epoch [10/20], loss:4.4309
+epoch [11/20], loss:4.7305
+epoch [12/20], loss:4.6002
+epoch [13/20], loss:4.9852
+epoch [14/20], loss:4.2118
+epoch [15/20], loss:5.4056
+epoch [16/20], loss:4.5112
+epoch [17/20], loss:4.3332
+epoch [18/20], loss:4.5508
+epoch [19/20], loss:4.5541
+epoch [20/20], loss:4.4451
+=============== Validating stage ===============
+loss: 3.5929
+Regularized autoencoder has been created
+Validating before train
+=============== Validating stage ===============
+loss: 345.1982
+=============== Learning stage ===============
+epoch [1/20], loss:14.5671
+epoch [2/20], loss:15.5164
+epoch [3/20], loss:12.8912
+epoch [4/20], loss:13.1326
+epoch [5/20], loss:14.8215
+epoch [6/20], loss:12.4729
+epoch [7/20], loss:14.9674
+epoch [8/20], loss:13.2039
+epoch [9/20], loss:12.7707
+epoch [10/20], loss:12.7480
+epoch [11/20], loss:12.5669
+epoch [12/20], loss:12.1838
+epoch [13/20], loss:12.2898
+epoch [14/20], loss:13.0784
+epoch [15/20], loss:12.6313
+epoch [16/20], loss:13.1867
+epoch [17/20], loss:13.7415
+epoch [18/20], loss:12.7364
+epoch [19/20], loss:14.1035
+epoch [20/20], loss:12.0983
+=============== Validating stage ===============
+loss: 11.9006
+Variational autoencoder has been created
+Validating before train
+=============== Validating stage ===============
+Loss: 106.2491 Reconst Loss: 70.1446, KL Div: 36.10454941
+=============== Learning stage ===============
+Epoch[1/20], Loss: 14.6129 Reconst Loss: 14.5853, KL Div: 0.02758595
+Epoch[2/20], Loss: 14.1856 Reconst Loss: 14.1850, KL Div: 0.00059819
+Epoch[3/20], Loss: 14.7098 Reconst Loss: 14.7093, KL Div: 0.00059092
+Epoch[4/20], Loss: 14.2960 Reconst Loss: 14.2922, KL Div: 0.00374335
+Epoch[5/20], Loss: 14.3946 Reconst Loss: 14.3921, KL Div: 0.00247845
+Epoch[6/20], Loss: 12.8021 Reconst Loss: 12.8017, KL Div: 0.00037843
+Epoch[7/20], Loss: 14.0266 Reconst Loss: 14.0265, KL Div: 0.00007370
+Epoch[8/20], Loss: 14.0292 Reconst Loss: 14.0289, KL Div: 0.00030059
+Epoch[9/20], Loss: 13.4662 Reconst Loss: 13.4661, KL Div: 0.00006619
+Epoch[10/20], Loss: 13.2660 Reconst Loss: 13.2658, KL Div: 0.00015432
+Epoch[11/20], Loss: 13.6665 Reconst Loss: 13.6665, KL Div: 0.00007510
+Epoch[12/20], Loss: 13.9869 Reconst Loss: 13.9869, KL Div: 0.00004104
+Epoch[13/20], Loss: 13.8577 Reconst Loss: 13.8575, KL Div: 0.00017446
+Epoch[14/20], Loss: 13.4509 Reconst Loss: 13.4508, KL Div: 0.00004056
+Epoch[15/20], Loss: 14.4997 Reconst Loss: 14.4997, KL Div: 0.00002351
+Epoch[16/20], Loss: 13.7945 Reconst Loss: 13.7944, KL Div: 0.00011638
+Epoch[17/20], Loss: 14.0341 Reconst Loss: 14.0341, KL Div: 0.00003394
+Epoch[18/20], Loss: 13.5320 Reconst Loss: 13.5320, KL Div: 0.00001174
+Epoch[19/20], Loss: 13.9939 Reconst Loss: 13.9939, KL Div: 0.00001368
+Epoch[20/20], Loss: 13.8214 Reconst Loss: 13.8214, KL Div: 0.00001076
+=============== Validating stage ===============
+Loss: 12.4181 Reconst Loss: 12.4181, KL Div: 0.00000742
+
+Process finished with exit code 0
