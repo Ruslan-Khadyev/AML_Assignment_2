@@ -1,0 +1,181 @@
+C:\Users\Ruslan\AppData\Local\Programs\Python\Python39\python.exe C:/Users/Ruslan/Documents/innopolis/AdvancedMachineLearning/as2/Task_2/subtask_2/cgan_test.py
+using torch version: 1.11.0+cu113
+will use cuda: True
+the data has been loaded with shape: (175341, 37) y shape: (175341,)
+cGAN model has been loaded
+generating for label: 0 ,num examples: 54000
+generating for label: 1 ,num examples: 54254
+generating for label: 2 ,num examples: 43736
+generating for label: 3 ,num examples: 22607
+generating for label: 4 ,num examples: 37816
+generating for label: 5 ,num examples: 16000
+generating for label: 7 ,num examples: 45509
+generating for label: 8 ,num examples: 54867
+generating for label: 9 ,num examples: 55870
+the data has been balanced, X shape: (560000, 37) y shape: (560000,)
+---------------------- RANDOM FOREST CLASSIFIER ----------------------
+------------------------- unbalanced dataset -------------------------
+RandomForestClassifier() algorithm results
+Corresponding confusion matrix:
+[[   90    22    70   210     1     0     0     0     0     0]
+ [   16    46    72   215     7     0     0     2     2     0]
+ [    2     1   483  1842    17     1     0    12    12     0]
+ [    3     0   756  5763    88     9     0   129    24     0]
+ [   14     3    64   290  3180     3     0     1    15     0]
+ [    0     1    44   117    11  7904     0     0     1     1]
+ [    0     0     0     0     0     0 11169     0     0     0]
+ [    0     2   106   404     6     0     0  1579     1     0]
+ [    0     0     9    29    40     2     0     1   152     0]
+ [    0     0     1    17     1     0     0     0     0     6]]
+
+Corresponding classification report:
+              precision    recall  f1-score   support
+
+           0       0.72      0.23      0.35       393
+           1       0.61      0.13      0.21       360
+           2       0.30      0.20      0.24      2370
+           3       0.65      0.85      0.74      6772
+           4       0.95      0.89      0.92      3570
+           5       1.00      0.98      0.99      8079
+           6       1.00      1.00      1.00     11169
+           7       0.92      0.75      0.83      2098
+           8       0.73      0.65      0.69       233
+           9       0.86      0.24      0.38        25
+
+    accuracy                           0.87     35069
+   macro avg       0.77      0.59      0.63     35069
+weighted avg       0.87      0.87      0.86     35069
+
+-------------------------- balanced dataset --------------------------
+RandomForestClassifier() algorithm results
+Corresponding confusion matrix:
+[[11005    26    85   227     1     0     0     0     0     0]
+ [   16 10840    73   188     5     1     0     5     2     0]
+ [    4     0  9145  1842    22     3     0     9    12     0]
+ [   12     4   806 10224    70     8     0   110    25     4]
+ [    4     1    67   271 10944     3     0     4    14     0]
+ [    1     0    32   104     7 11031     0     0     3     1]
+ [    0     0     0     0     0     0 11176     0     0     0]
+ [    0     0   112   397     3     0     0 10845     1     0]
+ [    0     0     2    31    35     1     0     1 11067     0]
+ [    0     0     0    11     2     0     0     0     0 11055]]
+
+Corresponding classification report:
+              precision    recall  f1-score   support
+
+           0       1.00      0.97      0.98     11344
+           1       1.00      0.97      0.99     11130
+           2       0.89      0.83      0.86     11037
+           3       0.77      0.91      0.83     11263
+           4       0.99      0.97      0.98     11308
+           5       1.00      0.99      0.99     11179
+           6       1.00      1.00      1.00     11176
+           7       0.99      0.95      0.97     11358
+           8       0.99      0.99      0.99     11137
+           9       1.00      1.00      1.00     11068
+
+    accuracy                           0.96    112000
+   macro avg       0.96      0.96      0.96    112000
+weighted avg       0.96      0.96      0.96    112000
+
+----------------------- SIMPLE NEURAL NETWORK ------------------------
+--------------------------- Learning stage ---------------------------
+Train Epoch: 1 	Loss: 0.549781
+Train Epoch: 2 	Loss: 0.219475
+Train Epoch: 3 	Loss: 0.311930
+Train Epoch: 4 	Loss: 0.399795
+Train Epoch: 5 	Loss: 0.325851
+Train Epoch: 6 	Loss: 0.455658
+Train Epoch: 7 	Loss: 0.684214
+Train Epoch: 8 	Loss: 0.573980
+Train Epoch: 9 	Loss: 0.156336
+Train Epoch: 10 	Loss: 0.307544
+------------------------- unbalanced dataset -------------------------
+SimplePerceptron(
+  (fc1): Linear(in_features=37, out_features=128, bias=True)
+  (fc2): Linear(in_features=128, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=32, bias=True)
+  (fc4): Linear(in_features=32, out_features=10, bias=True)
+  (criterion): CrossEntropyLoss()
+) algorithm results
+Corresponding confusion matrix:
+[[   56     5     1   320    11     0     0     0     0     0]
+ [    0    41     3   307     1     0     0     3     5     0]
+ [    1     7    83  2211    34     1     0    16    17     0]
+ [    4     8    20  6446   111     0     3   121    59     0]
+ [    7    10     0   438  3018     0     0    63    34     0]
+ [    0     1    16   153    25  7881     0     2     1     0]
+ [    0     0     0     0     5     0 11164     0     0     0]
+ [    2     2     3   513     4     0     0  1573     1     0]
+ [    0     0     6    12    35     0     0    23   157     0]
+ [    0     0     0    22     3     0     0     0     0     0]]
+
+Corresponding classification report:
+              precision    recall  f1-score   support
+
+           0       0.80      0.14      0.24       393
+           1       0.55      0.11      0.19       360
+           2       0.63      0.04      0.07      2370
+           3       0.62      0.95      0.75      6772
+           4       0.93      0.85      0.89      3570
+           5       1.00      0.98      0.99      8079
+           6       1.00      1.00      1.00     11169
+           7       0.87      0.75      0.81      2098
+           8       0.57      0.67      0.62       233
+           9       0.00      0.00      0.00        25
+
+    accuracy                           0.87     35069
+   macro avg       0.70      0.55      0.55     35069
+weighted avg       0.88      0.87      0.84     35069
+
+--------------------------- Learning stage ---------------------------
+Train Epoch: 1 	Loss: 0.006424
+Train Epoch: 2 	Loss: 0.071771
+Train Epoch: 3 	Loss: 0.236678
+Train Epoch: 4 	Loss: 0.177597
+Train Epoch: 5 	Loss: 0.052012
+Train Epoch: 6 	Loss: 0.048273
+Train Epoch: 7 	Loss: 0.274729
+Train Epoch: 8 	Loss: 0.149385
+Train Epoch: 9 	Loss: 0.164650
+Train Epoch: 10 	Loss: 0.003321
+-------------------------- balanced dataset --------------------------
+SimplePerceptron(
+  (fc1): Linear(in_features=37, out_features=128, bias=True)
+  (fc2): Linear(in_features=128, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=32, bias=True)
+  (fc4): Linear(in_features=32, out_features=10, bias=True)
+  (criterion): CrossEntropyLoss()
+) algorithm results
+Corresponding confusion matrix:
+[[10975     0    35   323     7     0     4     0     0     0]
+ [    0 10817    31   274     3     0     0     4     1     0]
+ [    2     1  8975  1980    49     9     2     4    15     0]
+ [    8     6   334 10609   183    14     3    80    26     0]
+ [    5     0    33   324 10825     1    58    40    22     0]
+ [    1     0     8   131    23 11014     0     2     0     0]
+ [    0     0     0     7     3     0 11166     0     0     0]
+ [    1     0    76   477     6     5     0 10792     1     0]
+ [    0     0     1    28    56     0     0     8 11044     0]
+ [    0     0     0    15     3     0     0     0     1 11049]]
+
+Corresponding classification report:
+              precision    recall  f1-score   support
+
+           0       1.00      0.97      0.98     11344
+           1       1.00      0.97      0.99     11130
+           2       0.95      0.81      0.87     11037
+           3       0.75      0.94      0.83     11263
+           4       0.97      0.96      0.96     11308
+           5       1.00      0.99      0.99     11179
+           6       0.99      1.00      1.00     11176
+           7       0.99      0.95      0.97     11358
+           8       0.99      0.99      0.99     11137
+           9       1.00      1.00      1.00     11068
+
+    accuracy                           0.96    112000
+   macro avg       0.96      0.96      0.96    112000
+weighted avg       0.96      0.96      0.96    112000
+
+
+Process finished with exit code 0
