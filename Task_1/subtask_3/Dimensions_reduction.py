@@ -1,5 +1,4 @@
 import sys
-
 import routine
 from Task_1.data_preprocess import DataLoader
 from sklearn.tree import DecisionTreeClassifier
@@ -26,9 +25,9 @@ def test_algorithm(x, y, algorithm):
     print(classification_report(y_test, y_pred))
 
 
-def main(args):
+def main():
     # Load data
-    data_loader = DataLoader(args[1], args[1], use_mask=False)
+    data_loader = DataLoader("../data_identity.csv", "../data_transaction.csv", use_mask=False)
     print("data has been loaded with X shape:", data_loader.X_data.shape, "y shape:", data_loader.y_labels.shape)
 
     # PCA
@@ -50,5 +49,5 @@ def main(args):
 
 
 if __name__ == "__main__":
-    main(sys.argv)
+    main()
 
