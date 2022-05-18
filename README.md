@@ -17,7 +17,7 @@ The task about anomaly detection in the domain of cyber security. The anomalies 
 For each task we have individual data. You can download it for [Task1](https://drive.google.com/file/d/1iVl4Q4Bq3Fbwv60lLthfBc6eYxYLrdnU/view) and [Task 2](https://cloudstor.aarnet.edu.au/plus/s/2DhnLGDdEECo4ys?path=%2FUNSW-NB15%20-%20CSV%20Files%2Fa%20part%20of%20training%20and%20testing%20set)
 
 # Structure of the project
-Project consists, as mentioned, of "Task_1" and "Task_2" module and their subtasks.
+Project consists, as mentioned, of "Task_1" and "Task_2" module and their subtasks. After downloading put dataset for Task_1 to Task_1 folder and put datasets for Task_2 to Task_2 folder. If you want you can set custom dataset folder directly from callable .py files.
 
 ```
 │   requirements.txt    <-- file with necessary libs
@@ -79,11 +79,11 @@ Project consists, as mentioned, of "Task_1" and "Task_2" module and their subtas
 
 1) To run this project clone it first on your computer to the specific folder
 ```
-$ git clone https://github.com/RusMarshall/AML_Assignment_2
+$ git clone [https://github.com/RusMarshall/AML_Assignment_2](https://github.com/Ruslan-Khadyev/AML_Assignment_2)
 ```
 or download ```.zip``` file
 
-2) Open or download IDE like "pyCharm" after go to ```File -> open -> SSD-Assignment-1``` folder
+2) Open or download IDE like "pyCharm" after go to ```File -> open -> AML_Assignment_2``` folder
 
 3) Setup interpreter for python environment if it was not set
 
@@ -97,10 +97,10 @@ Task_1, subtask_2 -> use ```Comparison_with_statistics.py```
 
 Task_1, subtask_3 -> use ```Dimensions_reduction.py``` 
 
-For Task_1 it is necessary to add arguments after script name like: ```python Autoencoders_train_test.py path_to_identity_csvm path_to_transaction_csv``` for each of subtasks.
-
 For the Task 2 files are:
 
 Task_2, subtask_1 -> use ```cgan_train.py``` 
 
 Task_2, subtask_2 -> use ```cgan_test.py```
+
+For example, command for Task_1, subtask_1 will be ```python Autoencoders_train_test.py```
