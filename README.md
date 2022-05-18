@@ -27,7 +27,7 @@ Project consists, as mentioned, of "Task_1" and "Task_2" module and their subtas
 │   │   data_preprocess.py  <-- script with files loader
 │   │
 │   ├───subtask_1
-│   │   │   __Autoencoders_train_test.py__           <-- script with Autoencoders train and test script
+│   │   │   Autoencoders_train_test.py           <-- script with Autoencoders train and test script
 │   │   │   Autoencoders_train_test_output.txt   <-- file with Autoencoders train and test script output
 │   │   │   Regularized_autoencoder.py           <-- script with Regularized Autoencoder definition
 │   │   │   Undercomplete_autoencoder.py         <-- script with Undercomplete Autoencoder definition
@@ -89,10 +89,17 @@ or download ```.zip``` file
 
 4) install all necessary libs in ```requirements.txt``` file
 
-Then, choose which part of the project you want to run.
-```
+Then, choose which part of the project you want to run:
 
-```
+Task_1, subtask_1 -> use '''Autoencoders_train_test.py''' 
+
+Task_1, subtask_2 -> use '''Comparison_with_statistics.py'''
+
+Task_1, subtask_3 -> use '''Dimensions_reduction.py''' 
+
+For Task_1 it is necessary to add arguments after script name like: '''python Autoencoders_train_test.py path_to_identity_csvm path_to_transaction_csv''' for each of subtasks.
+
+
 
 Finally run 
 ```
