@@ -89,7 +89,7 @@ or download ```.zip``` file
 
 4) install all necessary libs in ```requirements.txt``` file
 
-Then, choose which part of the project you want to run:
+Then, choose which part of the project you want to run of the First task:
 
 Task_1, subtask_1 -> use ```Autoencoders_train_test.py``` 
 
@@ -98,3 +98,9 @@ Task_1, subtask_2 -> use ```Comparison_with_statistics.py```
 Task_1, subtask_3 -> use ```Dimensions_reduction.py``` 
 
 For Task_1 it is necessary to add arguments after script name like: ```python Autoencoders_train_test.py path_to_identity_csvm path_to_transaction_csv``` for each of subtasks.
+
+For Task 2 start files are:
+
+Task_2, subtask_1 -> use ```cgan_train.py``` 
+
+Task_2, subtask_2 -> use ```cgan_test.py```
