@@ -21,34 +21,32 @@ Project consists, as mentioned, of "Task_1" and "Task_2" module and their subtas
 
 ```
 C:.
-│   requirements.txt
-│   routine.py
+│   requirements.txt    <-- file with necessary libs
+│   routine.py          <-- file with service functions
 │
 ├───Task_1
-│   │   data_identity.csv
-│   │   data_preprocess.py
-│   │   data_transaction.csv
+│   │   data_preprocess.py  <-- script with files loader
 │   │
 │   ├───subtask_1
-│   │   │   Autoencoders_train_test.py
-│   │   │   Autoencoders_train_test_output.txt
-│   │   │   Regularized_autoencoder.py
-│   │   │   Undercomplete_autoencoder.py
-│   │   │   Variational_autoencoder.py
+│   │   │   Autoencoders_train_test.py           <-- script with Autoencoders train and test script
+│   │   │   Autoencoders_train_test_output.txt   <-- file with Autoencoders train and test script output
+│   │   │   Regularized_autoencoder.py           <-- script with Regularized Autoencoder definition
+│   │   │   Undercomplete_autoencoder.py         <-- script with Undercomplete Autoencoder definition
+│   │   │   Variational_autoencoder.py           <-- script with Variational Autoencoder definition
 │   │   │
 │   │   └───autoencoders
-│   │           Regularized.pth
-│   │           UnderComplete.pth
-│   │           Variational.pth
+│   │           Regularized.pth     <-- file with saved Regularized Autoencoder model
+│   │           UnderComplete.pth   <-- file with saved Undercomplete Autoencoder model
+│   │           Variational.pth     <-- file with saved Variational Autoencoder model
 │   │
 │   ├───subtask_2
-│   │       Comparison_with_statistics.py
-│   │       Comparison_with_statistics.txt
+│   │       Comparison_with_statistics.py   <-- script with compare Autoencoders approach and regulal statistic
+│   │       Comparison_with_statistics.txt  <-- console output of the approaches compare script
 │   │
 │   └───subtask_3
-│           Dimensions_reduction.py
-│           Dimensions_reduction_output.txt
-│           explained_variance.png
+│           Dimensions_reduction.py             <-- script with compare Dimensionality reduction approaches
+│           Dimensions_reduction_output.txt     <-- console output of the script with compare Dimensionality reduction approaches
+│           explained_variance.png              <-- explained varience of the PCA algorithm
 │    
 └───Task_2
     │
