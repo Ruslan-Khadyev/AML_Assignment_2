@@ -27,7 +27,7 @@ Project consists, as mentioned, of "Task_1" and "Task_2" module and their subtas
 │   │   data_preprocess.py  <-- script with files loader
 │   │
 │   ├───subtask_1
-│   │   │   Autoencoders_train_test.py           <-- script with Autoencoders train and test script
+│   │   │   __Autoencoders_train_test.py__           <-- script with Autoencoders train and test script
 │   │   │   Autoencoders_train_test_output.txt   <-- file with Autoencoders train and test script output
 │   │   │   Regularized_autoencoder.py           <-- script with Regularized Autoencoder definition
 │   │   │   Undercomplete_autoencoder.py         <-- script with Undercomplete Autoencoder definition
@@ -82,10 +82,17 @@ Project consists, as mentioned, of "Task_1" and "Task_2" module and their subtas
 $ git clone https://github.com/RusMarshall/AML_Assignment_2
 ```
 or download ```.zip``` file
+
 2) Open or download IDE like "pyCharm" after go to ```File -> open -> SSD-Assignment-1``` folder
-3) Setup interpreter for python environment
+
+3) Setup interpreter for python environment if it was not set
+
 4) install all necessary libs in ```requirements.txt``` file
 
+Then, choose which part of the project you want to run.
+```
+
+```
 
 Finally run 
 ```
