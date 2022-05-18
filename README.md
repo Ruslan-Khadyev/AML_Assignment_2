@@ -20,7 +20,6 @@ For each task we have individual data. You can download it for [Task1](https://d
 Project consists, as mentioned, of "Task_1" and "Task_2" module and their subtasks.
 
 ```
-C:.
 │   requirements.txt    <-- file with necessary libs
 │   routine.py          <-- file with service functions
 │
@@ -51,43 +50,44 @@ C:.
 └───Task_2
     │
     ├───model
-    │       model_cgan.pth
-    │       model_cgan_sgd.pth
+    │       model_cgan.pth      <-- file with saved Conditional Generative Adversarial Network with RMSprop optim
+    │       model_cgan_sgd.pth  <-- file with saved Conditional Generative Adversarial Network with sgd optim
     │
     ├───runs
     │   ├───May17_17-41-31_DESKTOP-C75306S
-    │   │       events.out.tfevents.1652798493.DESKTOP-C75306S.880.0
+    │   │       events.out.tfevents.1652798493.DESKTOP-C75306S.880.0    <-- file for Tensorboard with learning parameters tracking of cGAN with RMSprop
     │   │
     │   └───May17_19-05-41_DESKTOP-C75306S
-    │           events.out.tfevents.1652803544.DESKTOP-C75306S.22200.0
+    │           events.out.tfevents.1652803544.DESKTOP-C75306S.22200.0  <-- file for Tensorboard with learning parameters tracking of cGAN with SGD
     │
     ├───subtask_1
-    │       cgan_train.py
-    │       conditional_generative_adversarial_network.py
-    │       data_preprocess.py
-    │       Discriminator.py
-    │       Generator.py
-    │       routine.py
+    │       cgan_train.py                                   <-- file with cGAN training process
+    │       conditional_generative_adversarial_network.py   <-- file with cGAN definition
+    │       data_preprocess.py                              <-- file with data preprocess for cGAN
+    │       Discriminator.py                                <-- file with cGAN's Discreminator definition
+    │       Generator.py                                    <-- file with cGAN's Generator definition
+    │       routine.py                                      <-- service functions for cGAN
     │   
     │
     └───subtask_2
-            cgan_test.py
-            cgan_test_output.txt
-            simple_perceptron.py
+            cgan_test.py            <-- file with cGAN testing process
+            cgan_test_output.txt    <-- file with console output of cGAN testing
+            simple_perceptron.py    <-- file with simple Neural Network definition
 ```
 
 # Run the project
 
 1) To run this project clone it first on your computer to the specific folder
 ```
-$ git clone https://github.com/RusMarshall/SSD-Assignment-1
+$ git clone https://github.com/RusMarshall/AML_Assignment_2
 ```
 or download ```.zip``` file
-
 2) Open or download IDE like "pyCharm" after go to ```File -> open -> SSD-Assignment-1``` folder
+3) Setup interpreter for python environment
+4) install all necessary libs in ```requirements.txt``` file
 
-3) Finally run 
+
+Finally run 
 ```
 $ python3  main.py
 ```
-After run three .txt files will created by main.py
